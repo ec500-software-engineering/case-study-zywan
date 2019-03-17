@@ -48,4 +48,12 @@ For the libraried that Keras uses, we can get the information from the setup.py
 2. make a patch / pull request for the project to fix problem / add feature      
 
 ## Demonstration application of the system   
-
+### Background
+image classification of two classes of objects-- dogs and cats    
+### Demo Results
+#### Accuracy
+![Image](Accuracy.png)
+#### Loss
+![Image](loss.png)
+#### one classification example
+![Image](result.png)
