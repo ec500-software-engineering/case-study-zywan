@@ -24,7 +24,7 @@ For the libraried that Keras uses, we can get the information from the setup.py
 
 
 2. What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?     
-
+Travis-CI platform
 
 3. What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang     
 
