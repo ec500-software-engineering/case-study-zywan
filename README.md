@@ -21,13 +21,24 @@ For the libraried that Keras uses, we can get the information from the setup.py
 
 ## Testing: describe unit/integration/module tests and the test framework
 1. How are they ensuring the testing is meaningful? Do they have code coverage metrics for example?      
-
-
 2. What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?     
-Travis-CI platform
-
 3. What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang     
-
+They use Travis-CI platform to do the following test:     
+Integration test:     
+preprocessing --> sequence test, text test, image test
+application test     
+imageNet utils test      
+dataset test       
+image data task test      
+tensorflow integration test     
+Keras functional test:       
+backend test     
+engine test      
+layer test      
+legacy test      
+utils test      
+wrapper test      
+multiprocessing test and so on        
 ## Software architecture
 
 1. How would you add / edit functionality if you wanted to? How would one use this project from external projects, or is it only usable as a standalone program?       
@@ -38,6 +49,7 @@ Travis-CI platform
 6. Does the project lean more towards object oriented or functional components    
 
 ![achitecture](diagram.png)
+6. The project lean more towards functional components.
 
 ## Analyze two defects in the project
 1. Does the issue require an architecture change, or is it just adding a new function or?      
