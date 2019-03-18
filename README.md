@@ -29,18 +29,15 @@ Travis-CI platform
 3. What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang     
 
 ## Software architecture
+
 1. How would you add / edit functionality if you wanted to? How would one use this project from external projects, or is it only usable as a standalone program?       
-
-
 2. What parts of the software are asynchronous (if any)?    
-
 3. Please make diagrams as appropriate for your explanation        
-
 4. How are separation of concerns and information hiding handled?        
-
 5. What architectural patterns are used         
+6. Does the project lean more towards object oriented or functional components    
 
-6. Does the project lean more towards object oriented or functional components      
+![achitecture](diagram.png)
 
 ## Analyze two defects in the project
 1. Does the issue require an architecture change, or is it just adding a new function or?      
