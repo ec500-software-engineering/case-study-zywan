@@ -44,12 +44,12 @@ multiprocessing test and so on
 5. What architectural patterns are used         
 6. Does the project lean more towards object oriented or functional components    
 Keras can be used from external projects, the only thing that you need to do is import the necessary libraries to the program.       
-Keras is synchronous.      
-![achitecture](diagram.png)
-one use case diagram for multiple input:
-![example](example.png)
-The achitectural pattern that Keras mainly use is layered pattern and Pipe-filter pattern.         
-The project lean more towards functional components. The codes are basically gatherd by functions instead of class, so I think it is more like functional components.
+Keras is synchronous.        
+![achitecture](diagram.png)         
+one use case diagram for multiple input:              
+![example](example.png)             
+The achitectural pattern that Keras mainly use is layered pattern and Pipe-filter pattern.                      
+The project lean more towards functional components. The codes are basically gatherd by functions instead of class, so I think it is more like functional components.         
 
 ## Analyze two defects in the project
 1. Does the issue require an architecture change, or is it just adding a new function or?      
