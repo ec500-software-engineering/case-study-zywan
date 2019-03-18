@@ -19,8 +19,9 @@ For the libraried that Keras uses, we can get the information from the setup.py
 ## Testing: describe unit/integration/module tests and the test framework
 1. How are they ensuring the testing is meaningful? Do they have code coverage metrics for example?      
 2. What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?     
-3. What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang     
-They use Travis-CI platform to do the following test:     
+3. What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang  
+yes, they do havae code coverage metrics, they have a .coveragerc file        
+They use Travis-CI platform to do the following test:         
 Integration test:     
 preprocessing --> sequence test, text test, image test
 application test     
@@ -53,12 +54,11 @@ The project lean more towards functional components. The codes are basically gat
 
 ## Analyze two defects in the project
 1. Does the issue require an architecture change, or is it just adding a new function or?      
-
-2. make a patch / pull request for the project to fix problem / add feature      
-
+2. make a patch / pull request for the project to fix problem / add feature         
 ## Demonstration application of the system   
 ### Background
-image classification of two classes of objects-- dogs and cats    
+image classification of two classes of objects-- dogs and cats      
+Accoring to the results, there exists overfitting.    
 ### Demo Results
 #### Accuracy
 ![Image](Accuracy.png)
