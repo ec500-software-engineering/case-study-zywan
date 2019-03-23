@@ -54,7 +54,11 @@ The project lean more towards functional components. The codes are basically gat
 
 ## Analyze two defects in the project
 1. Does the issue require an architecture change, or is it just adding a new function or?      
-2. make a patch / pull request for the project to fix problem / add feature         
+2. make a patch / pull request for the project to fix problem / add feature      
+Adding feature #10890       
+1. Add Dice Loss: Dice Score/Loss (also known as F1-score or Sorensen score) should be added as a metric and loss function as these are very commonly used in image segmentation or bounding box problems.       
+2. Linear Chain Conditional Random Field #4090      
+Linear Chain CRF layer for sequence tagging tasks.          
 ## Demonstration application of the system   
 ### Background
 image classification of two classes of objects-- dogs and cats      
