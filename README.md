@@ -12,7 +12,7 @@ I think the reason why Keras use python is the same as the reason why using pyth
 #### 2. What build system is used (e.g. Bazel, CMake, Meson)? What build tools / environment are needed to build (e.g. does it require Visual Studio or just GCC or ?)   
 Cmake and Bazel.      
 
-3. What frameworks / libraries are used in the project? At least one of these projects don’t use any external libraries or explicit threading, yet is noted for being the fastest in its category--in that case, what intrinsic language techniques is it using to get this speed. 
+#### 3. What frameworks / libraries are used in the project? At least one of these projects don’t use any external libraries or explicit threading, yet is noted for being the fastest in its category--in that case, what intrinsic language techniques is it using to get this speed. 
 
 Keras itself is a framework for building deep neural networks with Python. It is designed to build a deep neural network with a few lines of code to avoid complexity.
 For the libraried that Keras uses, we can get the information from the setup.py
