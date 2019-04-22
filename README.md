@@ -21,7 +21,7 @@ For the libraried that Keras uses, we can get the information from the setup.py
 
 ## Testing: describe unit/integration/module tests and the test framework
 #### 1. How are they ensuring the testing is meaningful? Do they have code coverage metrics for example?    
-yes, they do havae code coverage metrics, they have a .coveragerc file  
+yes, they do have code coverage metrics, they have a .coveragerc file  
 #### 2. What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?     
 They use Travis-CI platform to do the following test:         
 Integration test:     
