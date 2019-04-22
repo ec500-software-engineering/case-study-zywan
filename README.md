@@ -93,12 +93,17 @@ model.add(Dropout(0.5))
 model.add(Dense(2,activation='softmax'))
 optimizer = Adam(lr=1e-4)
 ```
+*why softmax:*            
 
-why maxpooling:
+In mathematics, the softmax function is a function that takes as input a vector of K real numbers, and normalizes it into a probability distribution consisting of K probabilities.             
+In 2 class classification problem, what we need are the possibilities of which classes those objects belong to. In this case, softmax is a good choice.
+
+*why maxpooling:*              
+
 Max pooling is a sample-based discretization process. The objective is to down-sample an input representation (image, hidden-layer output matrix, etc.), reducing its dimensionality and allowing for assumptions to be made about features contained in the sub-regions binned.    
 Also, it reduces the computational cost by reducing the number of parameters to learn and provides basic translation invariance to the internal representation.         
 
-why using Adam:
+*why Adam:*
 
 Straightforward to implement.             
 Computationally efficient.          
@@ -107,7 +112,7 @@ Invariant to diagonal rescale of the gradients.
 Well suited for problems that are large in terms of data and/or parameters.         
 Appropriate for non-stationary objectives.            
 Appropriate for problems with very noisy/or sparse gradients.           
-Hyper-parameters have intuitive interpretation and typically require little tuning.       
+Hyper-parameters have intuitive interpretation and typically require little tuning.             
 ### Demo Results
 #### Accuracy
 ![Image](Accuracy.png)
