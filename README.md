@@ -100,7 +100,7 @@ The output from the convolutional layers represents high-level features in the d
 **why softmax:**            
 
 In mathematics, the softmax function is a function that takes as input a vector of K real numbers, and normalizes it into a probability distribution consisting of K probabilities.             
-In 2 class classification problem, what we need are the possibilities of which classes those objects belong to. In this case, softmax is a good choice.
+In binary class classification problem, what we need are the possibilities of which class those objects belong to. In this case, softmax is a good choice.
 
 **why maxpooling:**              
 
@@ -112,11 +112,8 @@ Also, it reduces the computational cost by reducing the number of parameters to 
 Straightforward to implement.             
 Computationally efficient.          
 Little memory requirements.         
-Invariant to diagonal rescale of the gradients.       
 Well suited for problems that are large in terms of data and/or parameters.         
-Appropriate for non-stationary objectives.            
-Appropriate for problems with very noisy/or sparse gradients.           
-Hyper-parameters have intuitive interpretation and typically require little tuning.                  
+Hyper-parameters have intuitive interpretation and typically require little tuning.                       
 ### Demo Results
 #### Accuracy
 ![Image](Accuracy.png)
