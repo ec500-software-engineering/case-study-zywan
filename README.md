@@ -70,7 +70,29 @@ Linear Chain CRF layer for sequence tagging tasks.
 ### Background
 Image classification of two classes of objects-- dogs and cats      
 Accoring to the results, there exists overfitting.    
-Overfitting is a common phenomenon in DL/ML, since it is usual to have great performance in trainning but have poor performance in testing. Usage of Drop out, early stop and using bigger data set can prevent the overfitting in some way.
+Overfitting is a common phenomenon in DL/ML, since it is usual to have great performance in trainning but have poor performance in testing. Usage of Drop out, early stop and using bigger data set can prevent the overfitting in some way.          
+### model
+```python
+# build a model which have 3 convolution layers
+model = Sequential()
+
+model.add(InputLayer(input_shape=[64,64,1]))
+model.add(Conv2D(filters=32,kernel_size=5,strides=1,padding='same',activation='relu'))
+model.add(MaxPool2D(pool_size=5,padding='same'))
+
+model.add(Conv2D(filters=50,kernel_size=5,strides=1,padding='same',activation='relu'))
+model.add(MaxPool2D(pool_size=5,padding='same'))
+
+model.add(Conv2D(filters=80,kernel_size=5,strides=1,padding='same',activation='relu'))
+model.add(MaxPool2D(pool_size=5,padding='same'))
+
+model.add(Dropout(0.25))
+model.add(Flatten())
+model.add(Dense(512,activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(2,activation='softmax'))
+optimizer = Adam(lr=1e-4)
+```
 ### Demo Results
 #### Accuracy
 ![Image](Accuracy.png)
