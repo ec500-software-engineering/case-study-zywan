@@ -10,7 +10,8 @@ I think the reason why Keras use python is the same as the reason why using pyth
 (2) Machine learning is to use the data to make a machine make intelligent decision. An important task of a Machine learning engineer in his/her work life is to extract, process, define, clean, arrange and then understand the data to develop intelligent algorithms. sometimes the concept of linear Algebra, calcucas are so that they take the maximum amount of effort. So a quick implementation in Python helps a ML developer to validate an idea.           
 (3) There are collection and code stack of various open source repositories which is developed by people to continuously improve upon the existing methods. 
 #### 2. What build system is used (e.g. Bazel, CMake, Meson)? What build tools / environment are needed to build (e.g. does it require Visual Studio or just GCC or ?)   
-Cmake and Bazel.      
+Cmake and Bazel.          
+GCC and NVIDIA CUDA Compiler(NVCC) are needed for GPU acceleration.     
 
 #### 3. What frameworks / libraries are used in the project? At least one of these projects don’t use any external libraries or explicit threading, yet is noted for being the fastest in its category--in that case, what intrinsic language techniques is it using to get this speed. 
 
@@ -43,7 +44,9 @@ Windows 10, Linux, Mac
       
 ## Software architecture
 #### 1. How would you add / edit functionality if you wanted to? How would one use this project from external projects, or is it only usable as a standalone program?    
-Keras can be used from external projects, the only thing that you need to do is import the necessary libraries to the program.    
+Keras can be used from external projects, the only thing that you need to do is import the necessary libraries to the program.  
+Keras provides common used neural network layer, optimizers,loss functions drop out, activiate function, pooling and so on. Users can design their own models, but not in a free way like in Tensorflow and Pytorch, which means there are some restriction while using Keras.   
+
 #### 2. What parts of the software are asynchronous (if any)?    
 Keras is synchronous.   
 #### 3. Please make diagrams as appropriate for your explanation      
@@ -65,8 +68,9 @@ Adding feature  #10890
 Linear Chain CRF layer for sequence tagging tasks.          
 ## Demonstration application of the system   
 ### Background
-image classification of two classes of objects-- dogs and cats      
+Image classification of two classes of objects-- dogs and cats      
 Accoring to the results, there exists overfitting.    
+Overfitting is a common phenomenon in DL/ML, since it is usual to have great performance in trainning but have poor performance in testing. Usage of Drop out, early stop and using bigger data set can prevent the overfitting in some way.
 ### Demo Results
 #### Accuracy
 ![Image](Accuracy.png)
