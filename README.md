@@ -93,6 +93,21 @@ model.add(Dropout(0.5))
 model.add(Dense(2,activation='softmax'))
 optimizer = Adam(lr=1e-4)
 ```
+
+why maxpooling:
+Max pooling is a sample-based discretization process. The objective is to down-sample an input representation (image, hidden-layer output matrix, etc.), reducing its dimensionality and allowing for assumptions to be made about features contained in the sub-regions binned.    
+Also, it reduces the computational cost by reducing the number of parameters to learn and provides basic translation invariance to the internal representation.         
+
+why using Adam:
+
+Straightforward to implement.             
+Computationally efficient.          
+Little memory requirements.         
+Invariant to diagonal rescale of the gradients.       
+Well suited for problems that are large in terms of data and/or parameters.         
+Appropriate for non-stationary objectives.            
+Appropriate for problems with very noisy/or sparse gradients.           
+Hyper-parameters have intuitive interpretation and typically require little tuning.       
 ### Demo Results
 #### Accuracy
 ![Image](Accuracy.png)
