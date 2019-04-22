@@ -93,7 +93,7 @@ model.add(Dropout(0.5))
 model.add(Dense(2,activation='softmax'))
 optimizer = Adam(lr=1e-4)
 ```
-**fully connected layer (flatten + dense) **                
+**fully connected layer **                
 
 The output from the convolutional layers represents high-level features in the data. While that output could be flattened and connected to the output layer, adding a fully-connected layer is a cheap way of learning non-linear combinations of these features.             
 
