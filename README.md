@@ -93,6 +93,10 @@ model.add(Dropout(0.5))
 model.add(Dense(2,activation='softmax'))
 optimizer = Adam(lr=1e-4)
 ```
+**fully connected layer (flatten + dense) **                
+
+The output from the convolutional layers represents high-level features in the data. While that output could be flattened and connected to the output layer, adding a fully-connected layer is a cheap way of learning non-linear combinations of these features.             
+
 **why softmax:**            
 
 In mathematics, the softmax function is a function that takes as input a vector of K real numbers, and normalizes it into a probability distribution consisting of K probabilities.             
@@ -100,7 +104,7 @@ In 2 class classification problem, what we need are the possibilities of which c
 
 **why maxpooling:**              
 
-Max pooling is a sample-based discretization process. The objective is to down-sample an input representation (image, hidden-layer output matrix, etc.), reducing its dimensionality and allowing for assumptions to be made about features contained in the sub-regions binned.    
+Max pooling is a sample-based discretization process. The objective is to down-sample an input representation, reducing its dimensionality and allowing for assumptions to be made about features contained in the sub-regions.    
 Also, it reduces the computational cost by reducing the number of parameters to learn and provides basic translation invariance to the internal representation.         
 
 **why Adam:**
